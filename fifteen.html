@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="status-bar">
+            <div class="info-panel hidden-panel">
+                <div class="time">
+                    <p class="time-info"><span>Время:&nbsp;</span><span id="time_info">00:00</span></p>
+                </div>
+                <div class="move">
+                    <p class="move-info"><span>Ходы:&nbsp;</span><span id="move_info">0</span></p>
+                </div>
+            </div>
+            <button id="menu_button" class="menu-button">Меню</button>
+        </div>
+        <div class="box">
+            <div class="grid"></div>
+            <button id="start_game" class="standart-button start-button" type="button">Начать игру</button>
+            <div class="menu">
+                <div class="menu-items">
+                    <button id="continue" class="standart-button">Продолжить</button>
+                    <button id="new_game" class="standart-button">Новая игра</button>
+                    <button id="statistic" class="standart-button">Статистика</button>
+                    <button id="settings" class="standart-button">Настройки</button>
+                </div>
+                <div class="section statistics">
+                    <h2>Статистика</h2>
+                    <div class="statistics-info">
+                        <table class="history"></table>
+                    </div>
+                    <h3 class="statistics-warning">Будет доступна после первой игры</h3>
+                    <div class="button-panel">
+                        <button id="back_statistics" class="standart-button min-button">Назад</button>
+                        <button id="reset" class="standart-button min-button">Сбросить</button>
+                    </div>
+                </div>
+                <div class="section settings">
+                    <h2>Настройки</h2>
+                    <div class="label-group">
+                        <input type="checkbox" id="move" class="checkbox">
+                        <label for="move"><span>Счётчик ходов</span></label>
+                        <input type="checkbox" id="time" class="checkbox">
+                        <label for="time"><span>Учёт времени</span></label>
+                        <input type="checkbox" id="sound" class="checkbox">
+                        <label for="sound"><span>Звук</span></label>
+                    </div>
+                    <h3 class="settings-warning">Некоторые настройки невозможно изменить во время игры</h3>
+                    <div class="button-panel">
+                        <button id="back_settings" class="standart-button min-button">Назад</button>
+                        <button id="default" class="standart-button min-button">Сбросить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
